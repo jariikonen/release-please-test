@@ -1,0 +1,22 @@
+# This workflow will run tests and then publish a package to npm when a release is created.
+
+on:
+  push:
+    branches:
+      - main
+
+name: release-please
+
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    steps:
+      # create a release
+      - uses: google-github-actions/release-please-action@a37ac6e4f6449ce8b3f7607e4d97d0146028dc0b # v4.1.0
+        id: release
+        with:
+          # a personal access token (PAT) (with Read and Write access to code/
+          # contents and pull requests) is needed for the release-please to be
+          # able to trigger another workflow that is run after the pull request
+          # is accepted
+          token: ${{ secrets.RELEASE_TOKEN }}
