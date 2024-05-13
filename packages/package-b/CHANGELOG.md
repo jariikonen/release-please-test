@@ -1,0 +1,8 @@
+# Changelog
+
+## [0.0.2](https://github.com/jariikonen/release-please-test/compare/package-b-v0.0.1...package-b-v0.0.2) (2024-05-13)
+
+
+### Bug Fixes
+
+* this should trigger a patch release ([6030de1](https://github.com/jariikonen/release-please-test/commit/6030de1149b20f132775ac19204babf84b525fc8))
