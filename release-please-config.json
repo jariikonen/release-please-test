@@ -6,8 +6,6 @@
   "draft": false,
   "prerelease": false,
   "packages": {
-    ".": {},
-    "packages/package-a": {},
     "packages/package-b": {}
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
