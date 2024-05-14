@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/jariikonen/release-please-test/compare/package-b-v0.0.2...package-b-v0.1.0) (2024-05-14)
+
+
+### Miscellaneous Chores
+
+* release 0.1.0 ([cf74580](https://github.com/jariikonen/release-please-test/commit/cf7458098d5fe9b2cf70ff7ff3bf2aca4c60bb74))
+
 ## [0.0.2](https://github.com/jariikonen/release-please-test/compare/package-b-v0.0.1...package-b-v0.0.2) (2024-05-13)
 
 
