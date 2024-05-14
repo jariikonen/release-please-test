@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/jariikonen/release-please-test/compare/package-b-v0.1.0...package-b-v0.1.1) (2024-05-14)
+
+
+### Bug Fixes
+
+* test if this triggers a new patch release as it should ([bc40a9c](https://github.com/jariikonen/release-please-test/commit/bc40a9c19b90997f767724209e25e4911d79ddbc))
+
 ## [0.1.0](https://github.com/jariikonen/release-please-test/compare/package-b-v0.0.2...package-b-v0.1.0) (2024-05-14)
 
 
