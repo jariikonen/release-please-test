@@ -20,3 +20,7 @@ jobs:
           # able to trigger another workflow that is run after the pull request
           # is accepted
           token: ${{ secrets.RELEASE_TOKEN }}
+
+      - run: echo "paths_released -- $PATHS_RELEASED"
+        env:
+          PATHS_RELEASED: ${{ steps.release.outputs.paths_released }}
