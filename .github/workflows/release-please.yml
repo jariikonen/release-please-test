@@ -21,6 +21,7 @@ jobs:
           # is accepted
           token: ${{ secrets.RELEASE_TOKEN }}
 
-      - run: echo "paths_released -- $PATHS_RELEASED"
+      - run: echo "paths_released -- $PATHS_RELEASED" && echo "prs -- $PRS"
         env:
           PATHS_RELEASED: ${{ steps.release.outputs.paths_released }}
+          PRS: ${{ steps.release.outputs.prs }}
