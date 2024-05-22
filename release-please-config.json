@@ -7,10 +7,12 @@
   "prerelease": false,
   "packages": {
     ".": {
-      "skip-github-pull-request": true
+      "skip-github-pull-request": true,
+      "skip-github-release": true
     },
     "packages/package-a": {
-      "skip-github-pull-request": true
+      "skip-github-pull-request": true,
+      "skip-github-release": true
     },
     "packages/package-b": {}
   },
