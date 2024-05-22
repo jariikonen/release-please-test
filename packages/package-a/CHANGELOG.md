@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/jariikonen/release-please-test/compare/package-a-v0.1.0...package-a-v0.1.1) (2024-05-22)
+
+
+### Bug Fixes
+
+* test if this triggers a patch release ([43569a0](https://github.com/jariikonen/release-please-test/commit/43569a09f442e90734cc1195e69fbd988585e78a))
+
 ## [0.1.0](https://github.com/jariikonen/release-please-test/compare/package-a-v0.1.0...package-a-v0.1.0) (2024-05-22)
 
 
