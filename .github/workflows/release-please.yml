@@ -21,8 +21,9 @@ jobs:
           # is accepted
           token: ${{ secrets.RELEASE_TOKEN }}
 
-      - run: echo "paths_released -- $PATHS_RELEASED" && echo "prs -- $PRS" && echo "package-a--release_created -- $A_RELEASED"
+      - run: echo "paths_released -- $PATHS_RELEASED" && echo "prs -- $PRS" && echo "package-a released -- $A_RELEASED" && echo "package-b released -- $B_RELEASED"
         env:
           PATHS_RELEASED: ${{ steps.release.outputs.paths_released }}
           PRS: ${{ steps.release.outputs.prs }}
           A_RELEASED: ${{ contains(steps.release.outputs.paths_released, 'packages/package-a') }}
+          B_RELEASED: ${{ contains(steps.release.outputs.paths_released, 'packages/package-b') }}
