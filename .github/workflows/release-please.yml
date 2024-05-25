@@ -27,6 +27,6 @@ jobs:
           PRS: ${{ steps.release.outputs.prs }}
           A_RELEASED: ${{ steps.release.outputs.package-a--release_created }}
           B_RELEASED: ${{ steps.release.outputs.package-b--release_created }}
-      - run: echo $OUPUTS
+      - run: echo $OUTPUTS
         env:
           OUTPUTS: ${{ steps.release.outputs }}
