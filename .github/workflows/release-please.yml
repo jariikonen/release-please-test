@@ -25,4 +25,4 @@ jobs:
         env:
           PATHS_RELEASED: ${{ steps.release.outputs.paths_released }}
           PRS: ${{ steps.release.outputs.prs }}
-          A_RELEASED: ${{ fromJSON(steps.release.outputs.paths_released) }}
+          A_RELEASED: ${{ contains(steps.release.outputs.paths_released, 'packages/package-a') }}
