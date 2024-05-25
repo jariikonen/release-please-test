@@ -25,6 +25,5 @@ jobs:
         env:
           PATHS_RELEASED: ${{ steps.release.outputs.paths_released }}
           PRS: ${{ steps.release.outputs.prs }}
-          A_RELEASED: ${{ steps.release.outputs.package-a--release_created }}
-          B_RELEASED: ${{ steps.release.outputs.package-b--release_created }}
-      - run: echo $GITHUB_OUTPUTS
+          A_RELEASED: ${{ steps.release.outputs.packages--package-a--release_created }}
+          B_RELEASED: ${{ steps.release.outputs.packages--package-b--release_created }}
