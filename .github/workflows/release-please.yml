@@ -32,6 +32,8 @@ jobs:
         if: ${{ contains(steps.release.outputs.paths_released, 'packages') }}
 
       - uses: actions/checkout@v4
+        if: ${{ contains(steps.release.outputs.paths_released, 'packages/package-a') }}
+
       - run: gh workflow run a_released.yml
         env:
           GH_TOKEN: ${{ secrets.TRIGGER_TOKEN }}
