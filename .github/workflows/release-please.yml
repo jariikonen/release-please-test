@@ -27,3 +27,9 @@ jobs:
           PRS: ${{ steps.release.outputs.prs }}
           A_RELEASED: ${{ contains(steps.release.outputs.paths_released, 'packages/package-a') }}
           B_RELEASED: ${{ contains(steps.release.outputs.paths_released, 'packages/package-b') }}
+
+      - run: echo "a package was released"
+        if: ${{ steps.release.outputs.paths_released }}
+
+      - run: gh workflow run a_released.yml
+        if: ${{ contains(steps.release.outputs.paths_released, 'packages/package-a') }}
