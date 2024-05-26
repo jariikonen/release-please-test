@@ -29,7 +29,9 @@ jobs:
           B_RELEASED: ${{ contains(steps.release.outputs.paths_released, 'packages/package-b') }}
 
       - run: echo "a package was released"
-        if: ${{ steps.release.outputs.paths_released }}
+        if: ${{ contains(steps.release.outputs.paths_released, 'packages') }}
 
       - run: gh workflow run a_released.yml
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         if: ${{ contains(steps.release.outputs.paths_released, 'packages/package-a') }}
