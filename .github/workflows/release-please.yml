@@ -31,6 +31,7 @@ jobs:
       - run: echo "a package was released"
         if: ${{ contains(steps.release.outputs.paths_released, 'packages') }}
 
+      - uses: actions/checkout@v4
       - run: gh workflow run a_released.yml
         env:
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
