@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/jariikonen/release-please-test/compare/package-b-v1.0.4...package-b-v1.0.5) (2024-05-30)
+
+
+### Bug Fixes
+
+* merge development branch ([#29](https://github.com/jariikonen/release-please-test/issues/29)) ([d53d0af](https://github.com/jariikonen/release-please-test/commit/d53d0af8ff8baf8063a8cbc423032bd90facc244))
+
 ## [1.0.4](https://github.com/jariikonen/release-please-test/compare/package-b-v1.0.3...package-b-v1.0.4) (2024-05-30)
 
 
