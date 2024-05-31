@@ -4,6 +4,6 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Warning: no test specified\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
