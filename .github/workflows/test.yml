@@ -1,7 +1,12 @@
-# This workflow runs tests everytime a pull request is opened or updated and
+# This workflow runs tests everytime code is pushed into main and it includes
+# a change to package-b's code or a pull request is opened or updated and
 # it includes a change to package-b's code.
 
 on:
+  push:
+    branches:
+      - main
+    paths: "packages/package-b/**"
   pull_request:
     branches: [main]
     types: [opened, synchronize]
