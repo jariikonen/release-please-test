@@ -1,0 +1,21 @@
+# This workflow runs tests everytime a pull request is opened or updated and
+# it includes a change to package-b's code.
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+    paths: "packages/package-b/**"
+
+name: Test package-b pull request's code
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i -w package-b
+      - run: npm run test -w package-b
