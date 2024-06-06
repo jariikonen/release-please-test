@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/jariikonen/release-please-test/compare/package-b-v1.0.5...package-b-v2.0.0) (2024-06-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* this should trigger a new major release ([#34](https://github.com/jariikonen/release-please-test/issues/34))
+
+### Features
+
+* this should trigger a new major release ([#34](https://github.com/jariikonen/release-please-test/issues/34)) ([606cf72](https://github.com/jariikonen/release-please-test/commit/606cf72c0fdb81ef0a3d34d2a201c338f9d49320))
+
 ## [1.0.5](https://github.com/jariikonen/release-please-test/compare/package-b-v1.0.4...package-b-v1.0.5) (2024-05-30)
 
 
